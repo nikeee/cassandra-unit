@@ -1,8 +1,9 @@
 WELCOME to CassandraUnit
+*Note that this project was forked from [jsevellec](https://github.com/jsevellec/cassandra-unit) and cassandra 4.x modifications made by [wakingrufus](https://github.com/wakingrufus/cassandra-unit)*
 ========================
 
 Everything is in the wiki : 
-https://github.com/jsevellec/cassandra-unit/wiki
+TODO: A new, updated wiki will be created to address modifications made to the original library.
 
 What is it?
 -----------
@@ -21,14 +22,20 @@ Main features :
 Where to start :
 ----------------
 You can start by reading the wiki : 
-https://github.com/jsevellec/cassandra-unit/wiki
+TODO: A new, updated wiki will be created to address modifications made to the original library.
 
-and you can watch cassandra-unit-examples project.
-https://github.com/jsevellec/cassandra-unit-examples
+Why fork the project? :
+----------------
+The purpose of the forking of this library is to address the following concerns:
+* Last modification of cassandraunit (originally provided by jsevellec) was made in early 2020 and does not seem to be continually maintained
+* Pull requests have been submitted against the original repository, but none have been merged by original contributors since early 2020
+* cassandra 3.x can only be ran on Java 8, making it difficult for organizations moving to Java 11 or higher to upgrade their applications
+* cassandra 4.x is not available, but requires additional work to run (cassandra 4.x work done by wakingrufus)
 
-Mailing List :
---------------
-cassandra-unit-users@googlegroups.com (http://groups.google.com/group/cassandra-unit-users)
+Alternatives to this library :
+----------------
+* [Testcontainers](https://www.testcontainers.org/modules/databases/cassandra/) - For applications and organizations that run on containers (e.g. Docker), Testcontainers is the best choice for spinning up and down new Cassandra instances
+* [Embedded cassandra by nosan](https://github.com/nosan/embedded-cassandra) embedded cassandra approach that allows users to have fine grained control over starting and stopping instances of Cassandra including the version, where and how the files are stored, etc. Note that this dependency does not contain Cassandra dependencies, but instead, downloads Cassandra binaries from Apache and runs that instead.
 
 License :
 ---------
