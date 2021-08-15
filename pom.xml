@@ -5,8 +5,8 @@
     <packaging>pom</packaging>
     <name>cassandra-unit-parent</name>
     <version>4.4.0.0-SNAPSHOT</version>
-    <description>Test framework to develop with Cassandra</description>
-    <url>https://github.com/jsevellec/cassandra-unit</url>
+    <description>Enhancements for Test framework to develop with Cassandra</description>
+    <url>https://github.com/btjfsu/cassandra-unit</url>
     <licenses>
         <license>
             <name>GNU LESSER GENERAL PUBLIC LICENSE V3.0</name>
@@ -21,10 +21,10 @@
         </developer>
     </developers>
     <scm>
-        <connection>scm:git:https://github.com/jsevellec/cassandra-unit.git</connection>
-        <developerConnection>scm:git:https://github.com/jsevellec/cassandra-unit.git</developerConnection>
-        <url>https://github.com/jsevellec/cassandra-unit.git</url>
-      <tag>cassandra-unit-parent-3.3.0.0</tag>
+        <connection>scm:git:https://github.com/btjfsu/cassandra-unit.git</connection>
+        <developerConnection>scm:git:https://github.com/btjfsu/cassandra-unit.git</developerConnection>
+        <url>https://github.com/btjfsu/cassandra-unit.git</url>
+      <tag>HEAD</tag>
   </scm>
     <modules>
         <module>cassandra-unit</module>
@@ -37,9 +37,9 @@
 
         <cu.junit.version>4.12</cu.junit.version>
         <cu.logback.version>1.2.3</cu.logback.version>
-        <cu.cassandra.all.version>4.0-rc1</cu.cassandra.all.version>
-        <cu.cassandra.driver.version>4.3.1</cu.cassandra.driver.version>
-        <cu.spring.version>4.0.2.RELEASE</cu.spring.version>
+        <cu.cassandra.all.version>4.0.0</cu.cassandra.all.version>
+        <cu.cassandra.driver.version>4.11.0</cu.cassandra.driver.version>
+        <cu.spring.version>5.3.9</cu.spring.version>
         <cu.hamcrest.version>1.3</cu.hamcrest.version>
     </properties>
 
@@ -75,8 +75,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>${jdk.version}</source>
-                    <target>${jdk.version}</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>
