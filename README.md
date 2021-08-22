@@ -3,8 +3,7 @@ WELCOME to CassandraUnit
 
 *Note that this project was forked from [jsevellec](https://github.com/jsevellec/cassandra-unit) and cassandra 4.x modifications made by [wakingrufus](https://github.com/wakingrufus/cassandra-unit)*
 
-Everything is in the wiki : 
-TODO: A new, updated wiki will be created to address modifications made to the original library.
+Everything is in the wiki : https://github.com/jsevellec/cassandra-unit/wiki
 
 What is it?
 -----------
@@ -22,8 +21,7 @@ Main features :
 
 Where to start :
 ----------------
-You can start by reading the wiki : 
-TODO: A new, updated wiki will be created to address modifications made to the original library.
+You can start by reading the wiki : https://github.com/jsevellec/cassandra-unit/wiki
 
 Why fork the project? :
 ----------------
