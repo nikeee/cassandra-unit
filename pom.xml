@@ -28,14 +28,11 @@
   </scm>
     <modules>
         <module>cassandra-unit</module>
-        <module>cassandra-unit-shaded</module>
         <module>cassandra-unit-spring</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-        <cu.junit.version>4.12</cu.junit.version>
         <cu.logback.version>1.2.3</cu.logback.version>
         <cu.cassandra.all.version>4.0.0</cu.cassandra.all.version>
         <cu.cassandra.driver.version>4.11.0</cu.cassandra.driver.version>
@@ -213,6 +210,8 @@
                                     <goal>jar</goal>
                                 </goals>
                                 <configuration>
+                                    <detectLinks>true</detectLinks>
+                                    <detectJavaApiLink>false</detectJavaApiLink>
                                     <additionalparam>-Xdoclint:none</additionalparam>
                                 </configuration>
                             </execution>

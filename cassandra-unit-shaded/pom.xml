@@ -108,7 +108,10 @@
                                     <goal>jar</goal>
                                 </goals>
                                 <configuration>
-                                    <includeDependencySources>true</includeDependencySources>
+                                    <source>8</source>
+                                    <includeDependencySources>false</includeDependencySources>
+                                    <detectLinks>true</detectLinks>
+                                    <detectJavaApiLink>false</detectJavaApiLink>
                                     <additionalparam>-Xdoclint:none</additionalparam>
                                 </configuration>
                             </execution>
@@ -121,7 +124,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.cassandraunit</groupId>
+            <groupId>io.github.btjfsu</groupId>
             <artifactId>cassandra-unit</artifactId>
             <version>${project.version}</version>
             <exclusions>
