@@ -4,7 +4,7 @@
     <artifactId>cassandra-unit-parent</artifactId>
     <packaging>pom</packaging>
     <name>cassandra-unit-parent</name>
-    <version>4.4.0.1</version>
+    <version>4.4.0.1-SNAPSHOT</version>
     <description>Enhancements for Test framework to develop with Cassandra</description>
     <url>https://github.com/btjfsu/cassandra-unit</url>
     <licenses>
@@ -24,11 +24,12 @@
         <connection>scm:git:https://github.com/btjfsu/cassandra-unit.git</connection>
         <developerConnection>scm:git:https://github.com/btjfsu/cassandra-unit.git</developerConnection>
         <url>https://github.com/btjfsu/cassandra-unit.git</url>
-      <tag>cassandra-unit-parent-4.4.0.1</tag>
+      <tag>HEAD</tag>
   </scm>
     <modules>
         <module>cassandra-unit</module>
         <module>cassandra-unit-spring</module>
+        <module>cassandra-unit-shaded</module>
     </modules>
 
     <properties>
