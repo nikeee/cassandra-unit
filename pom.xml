@@ -4,7 +4,7 @@
     <artifactId>cassandra-unit-parent</artifactId>
     <packaging>pom</packaging>
     <name>cassandra-unit-parent</name>
-    <version>4.4.0.1</version>
+    <version>4.4.0.2-SNAPSHOT</version>
     <description>Enhancements for Test framework to develop with Cassandra</description>
     <url>https://github.com/btjfsu/cassandra-unit</url>
     <licenses>
