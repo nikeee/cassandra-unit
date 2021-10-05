@@ -3,7 +3,7 @@
     <parent>
         <groupId>io.github.btjfsu</groupId>
         <artifactId>cassandra-unit-parent</artifactId>
-        <version>4.4.0.1-SNAPSHOT</version>
+        <version>4.4.0.1</version>
     </parent>
     <groupId>io.github.btjfsu</groupId>
     <artifactId>cassandra-unit</artifactId>
@@ -110,7 +110,27 @@
         <dependency>
             <groupId>org.apache.thrift</groupId>
             <artifactId>libthrift</artifactId>
-            <version>0.14.2</version>
+            <version>0.15.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.tomcat</groupId>
+                    <artifactId>tomcat-annotations-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.tomcat.embed</groupId>
+                    <artifactId>tomcat-embed-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>8.5.71</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-annotations-api</artifactId>
+            <version>8.5.71</version>
         </dependency>
         <dependency>
             <groupId>net.java.dev.jna</groupId>

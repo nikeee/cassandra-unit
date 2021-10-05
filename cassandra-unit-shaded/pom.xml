@@ -3,7 +3,7 @@
     <parent>
         <groupId>io.github.btjfsu</groupId>
         <artifactId>cassandra-unit-parent</artifactId>
-        <version>4.4.0.1-SNAPSHOT</version>
+        <version>4.4.0.1</version>
     </parent>
     <artifactId>cassandra-unit-shaded</artifactId>
     <description>Shaded version of cassandra-unit</description>
